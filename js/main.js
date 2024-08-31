@@ -54,4 +54,18 @@ window.addEventListener('keydown', (e) => {
         popup.classList.remove('active');
     }
 });
+async function sendForm(event) {
+    event.preventDefault(); 
+    
+    const formData = new FormData(event.target);     
+    const response = await fetch('/submit', {
+        method: 'POST',
+        body: formData,
+    });
+
+    const result = await response.json(); 
+    console.log(result); // Выводим результат в консоль    
+    // Здесь можно добавить код для обработки результата
+    alert(result.message); // Например, показываем сообщение
+}
 new WOW().init();
