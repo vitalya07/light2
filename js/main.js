@@ -63,9 +63,7 @@ async function sendForm(event) {
         body: formData,
     });
 
-    const result = await response.json(); 
-    console.log(result); // Выводим результат в консоль    
-    // Здесь можно добавить код для обработки результата
-    alert(result.message); // Например, показываем сообщение
+    const result = await response.json();    
+    console.log(result);
 }
 new WOW().init();
