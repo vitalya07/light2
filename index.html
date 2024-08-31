@@ -9,104 +9,350 @@
     <title>Light</title>
 </head>
 <body>
-    <div class="prelouder">
-        <div class="preloud"></div>
-    </div>
+    <div class="preloaded">
+        <div class="preloaded__wrapper">
+            <div class="preloaded__number">0%</div>
+            <div class="preloaded__grey">
+                <div class="preloaded__progress"></div>
+            </div>            
+        </div>
+   </div>
     <div class="content">
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <a href="#" class="header__logo-img">
-                            <img src="icons/logo.svg" alt="Логотип сайта">
-                        </a>
-                        <div class="header__logo-name">Клиника "Свет"</div>
-                    </div>
-                    <nav class="header__menu">
-                        <ul class="header__items">
-                            <li class="header__item">
-                                <a href="#" class="header__link">Услуги</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header__link">О нас</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header__link">Акции</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header__link">Преимущества</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header__link">Отзывы</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header__link">Обратная связь</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__contacts">
-                        <a href="tel:+79026063289" class="header__contacts-icon">
-                            <img src="icons/phone.svg" alt="иконка телефона">
-                        </a>
-                        <a href="tel:+79026053289" class="header__contacts-link">8-902-606-32-89</a>
-                    </div>
+        <div class="big__box">
+            <div class="popup" id="popup">
+                <div class="popup__box" id="popup-box">
+                    <div class="popup__close" id="popup-close"></div>
+                    <form action="#" class="popup__form" id="popup-form">
+                        <div>
+                            <input type="name" name="name" id="name" class="popup__input" placeholder="Ваше имя">
+                        </div>
+                        <div>   
+                            <input type="phone" name="phone" id="phone2" class="popup__input" placeholder="Ваш телефон">
+                        </div>
+                        <div class="popup__checkbox">
+                            <input type="checkbox" id="input__checkbox">
+                            <label for="input__checkbox" class="popup__checkbox-label">
+                                Нажимая кнопку отправить вы соглашаетесь с <a href="policy.html">Политикой конфедициальности</a>
+                            </label>
+                        </div>
+                        <button class="btn popup__btn">Отправить</button>
+                    </form>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="services">
-                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <img src="img/button-prev.png" alt="Стрелка назад">
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <img src="img/button-next.png" alt="Стрелка вперед">
-                        </button>
-                  </div>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="services__item">
-                                    <div class="services__item-img">
-                                        <img src="img/MRT.jpg" alt="МРТ">
-                                    </div>
-                                    <h2 class="services__item-name">МРТ, МРТ с контрастированием</h2>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="services__item">
-                                    <div class="services__item-img">
-                                        <img src="img/KT.jpg" alt="КТ">
-                                    </div>
-                                    <h2 class="services__item-name">КТ, КТ с контрастированием</h2>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="services__item">
-                                    <div class="services__item-img">
-                                        <img src="img/RG.jpg" alt="Рентгенографтя">
-                                    </div>
-                                    <h2 class="services__item-name">Рентгенография костно-суставной системы, рентгенография внутрениих органов, рентгенография с контрастированием</h2>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="services__item">
-                                    <div class="services__item-img">
-                                        <img src="img/Uzi.jpg" alt="УЗИ">
-                                    </div>
-                                    <h2 class="services__item-name">Ультразвуковое исследование</h2>
-                                </div>
-                            </li>
-                        </ul>
+            <header class="header" id="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a href="#" class="header__logo-img">
+                                <img src="icons/logo.svg" alt="Логотип сайта">
+                            </a>
+                            <div class="header__logo-name">Клиника "Свет"</div>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__items">
+                                <li class="header__item">
+                                    <a href="#services" class="header__link">Услуги</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#about" class="header__link">О нас</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#stock" class="header__link">Акции</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#Advantages" class="header__link">Преимущества</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#feedback" class="header__link">Отзывы</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#request" class="header__link">Обратная связь</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__contacts">
+                            <a href="tel:+79026063289" class="header__contacts-icon">
+                                <img src="icons/phone.svg" alt="иконка телефона">
+                            </a>
+                            <a href="tel:+79026053289" class="header__contacts-link">8-902-606-32-89</a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </header>
+            <main>
+                <section class="wow services animate__animated animate__fadeInUp" id="services">
+                    <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="img/button-prev.png" alt="Стрелка назад">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="img/button-next.png" alt="Стрелка вперед">
+                            </button>
+                      </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="services__item">
+                                        <div class="services__item-img">
+                                            <img src="img/MRT.jpg" alt="МРТ">
+                                        </div>
+                                        <h2 class="services__item-name">МРТ, МРТ с контрастированием</h2>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="services__item">
+                                        <div class="services__item-img">
+                                            <img src="img/KT.jpg" alt="КТ">
+                                        </div>
+                                        <h2 class="services__item-name">КТ, КТ с контрастированием</h2>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="services__item">
+                                        <div class="services__item-img">
+                                            <img src="img/RG.jpg" alt="Рентгенографтя">
+                                        </div>
+                                        <h2 class="services__item-name">Рентгенография костно-суставной системы, рентгенография внутрениих органов, рентгенография с контрастированием</h2>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="services__item">
+                                        <div class="services__item-img">
+                                            <img src="img/Uzi.jpg" alt="УЗИ">
+                                        </div>
+                                        <h2 class="services__item-name">Ультразвуковое исследование</h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="about" id="about">
+                    <div class="container">
+                        <div class="about__wrapper">
+                            <div class="wow animate__animated animate__fadeInLeft about__img">
+                                <img src="img/clinic.png" alt="Клиника">
+                            </div>
+                            <div class="wow animate__animated animate__fadeInRight about__info">
+                                <h1 class="about__info-title">Диагностическая клиника "Свет"</h1>
+                                <p class="about__info-descr">
+                                    Клиника «Свет» — современное медицинское учреждение, предлагающее широкий спектр услуг по лечению и диагностике различных заболеваний. Наша команда профессионалов, включая опытных врачей и медсестер, стремится создать комфортную и безопасную атмосферу для каждого пациента. Мы используем новейшие технологии и методы в области медицины, чтобы обеспечить высокое качество обслуживания. В клинике «Свет» акцент на индивидуальном подходе к каждому пациенту, что позволяет нам разрабатывать наиболее эффективные и безопасные планы лечения. Забота о здоровье и благополучии наших клиентов — это наша приоритетная задача.
+                                </p>
+                                <div class="about__buttons">
+                                    <a href="#" class="btn about__buttons-link">Подробнее</a>
+                                    <button class="btn about__buttons-btn" id="enrol-btn">Записаться</button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="stock" id="stock">
+                    <div class="container">
+                        <div class="title stock__title">Акции</div>
+                        <div class="stock__wrapper">
+                            <div class="wow stock__card animate__animated animate__fadeInLeft ">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="WOW animate__animated animate__fadeInDown stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInRight stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInLeft stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInUp stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInUp stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInUp stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+    
+                            <div class="wow animate__animated animate__fadeInUp stock__card">
+                                <div class="stock__card-title">Ретгенография коленных суставов</div>
+                                <div class="stock__card-price">
+                                    500руб
+                                    <span>350руб</span>
+                                </div>
+                                <a href="#" class="btn stock__btn">Узнать подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class=" wow animate__animated animate__fadeInUp advantages" id="Advantages">
+                    <div class="container">
+                        <div class="title advantages__title">Преимущества</div>
+                        <div class="advantages__wrapper">
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon1.svg" alt="Современное оборудование">
+                                </div>
+                                <div class="advantages__item-title">Современное оборудование</div>
+                                <p class="advantages__item-descr">
+                                    Клиника 'Свет' оснащена новейшим диагностическим оборудованием, что позволяет проводить точные и скорые исследования, минимизируя риск ошибок.
+                                </p>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon2.svg" alt="Высококвалифицированные специалисты">
+                                </div>
+                                <div class="advantages__item-title">Высококвалифицированные специалисты</div>
+                                <p class="advantages__item-descr">
+                                    В нашей команде работают эксперты с большим опытом, которые используют актуальные методики и подходы для постановки диагнозов.
+                                </p>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon3.svg" alt="Широкий спектр услуг">
+                                </div>
+                                <div class="advantages__item-title">Широкий спектр услуг</div>
+                                <p class="advantages__item-descr">
+                                    Мы предлагаем разнообразные диагностические услуги, включая лабораторные анализы, радиологические исследования и специализированные процедуры, что позволяет комплексно оценить состояние здоровья пациентов.
+                                </p>
+                            </div>
+    
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon4.svg" alt="Индивидуальный подход">
+                                </div>
+                                <div class="advantages__item-title">Индивидуальный подход</div>
+                                <p class="advantages__item-descr">
+                                    Мы ценим каждого пациента и разрабатываем индивидуальные планы диагностики с учетом их медицинской истории и пожеланий.
+                                </p>
+                            </div>
+    
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon5.svg" alt="комфортная обстановка">
+                                </div>
+                                <div class="advantages__item-title">комфортная обстановка</div>
+                                <p class="advantages__item-descr">
+                                    Клиника расположена в удобном месте с хорошей транспортной развязкой, а также предлагает комфортные условия ожидания и проведения процедур.
+                                </p>
+                            </div>
+    
+                            <div class="advantages__item">
+                                <div class="advantages__item-img">
+                                    <img src="icons/icon6.svg" alt="Быстрое получение результатов">
+                                </div>
+                                <div class="advantages__item-title">Быстрое получение результатов</div>
+                                <p class="advantages__item-descr">
+                                    Мы стремимся обеспечить минимальные сроки получения результатов исследований, что позволяет пациентам быстрее принимать решения о дальнейшем лечении.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="wow animate__animated animate__fadeInUp feedback" id="feedback">
+                    <div class="title feedback__title">Отзывы</div>
+                    <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="feedback__item">
+                                        <div class="feedback__item-img">
+                                            <img src="img/ava.png" alt="photo1">
+                                        </div>
+                                        <p class="feedback__item-comment">
+                                            Хочу поделиться своим положительным опытом обращения в диагностическую клинику "Свет". Профессионализм врачей поразил с первого посещения. Они внимательно выслушали все жалобы и провели тщательные обследования. Удобное расположение и современное оборудование создают комфортную атмосферу. Я осталась довольна результатами!
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                </section>
+                <section class="wow animate__animated animate__fadeInUp request" id="request">        
+                    <div class="container">
+                        <h2 class="title request__title">Оставьте заявку</h2>
+                        <form action="#" class="request__form" id="request-form">
+                            <div>
+                                <input type="name" name="name" class="request__input" id="name" placeholder="Ваше имя">
+                            </div>
+                            <div>
+                                <input type="phone" name="phone" class="request__input" id="phone" placeholder="Ваш телефон">
+                            </div>
+                            <div>
+                                <textarea name="message" id="request-textarea" class="request__textarea" placeholder="Ваш вопрос"></textarea>
+                            </div>     
+                            <div class="request__checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox" class="request__checkbox-label">Нажимая кнопку отправить я соглашаюсь с <a href="policy.html">Политикой конфиденциальности</a></label>
+                            </div>                 
+                            
+                            <button class="btn request__btn" id="form-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="wow animate__animated animate__fadeInUp footer">
+                <div class="container">
+                    <div class="footer__box">
+                        <div class="footer__logo">
+                            <img src="icons/logo.svg" alt="логотп сайта">
+                        </div>
+                        <div class="footer__wrapper">
+                            <a href="policy.html" class="footer__policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                            <div class="footer__copy">©Свет 2024</div>
+                        </div>                    
+                        <a href="https://e.mail.ru/" class="footer__email">saifutdinov_vitalii@mail.ru</a>
+                    </div>
+                </div>
+            </footer>
+            <a href="#header" class="arrow__top" id="scrollTop">
+                <img src="icons/arrow-top.svg" alt="стрелка вверх">
+            </a>
+        </div>            
+    </div>  
     <script src="js/wow.min.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/inputmask.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>   
 </body>
 </html>

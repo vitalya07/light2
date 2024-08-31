@@ -1,0 +1,65 @@
+.stock {
+    padding: 120px 0;
+    border-top: 2px dashed $bgColor;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: minmax(300px, auto);
+        grid-auto-rows: minmax(300px, auto);
+        gap: 50px;
+        margin-top: 120px;
+    }
+    &__card {
+        box-shadow: 0 0 15px $btnColor;
+        background-color: $bgColor;
+        padding: 30px 40px;
+        &-title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 1.2px;
+            font-size: 30px;
+            font-size: $textColor;
+        }
+        &-price {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 1.2px;
+            font-size: 16px;
+            color: $textColor;
+            margin-top: 50px;
+            position: relative;
+            span {
+                display: block;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 55px;
+                height: 2px;
+                background-color: #000;
+                transform: rotate(45deg);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 55px;
+                height: 2px;
+                background-color: #000;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &__btn {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

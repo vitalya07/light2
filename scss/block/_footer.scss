@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    height: 120px;
+    background-color: $bgColor;
+    margin: 0;
+    padding: 15px 0;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;     
+    }
+    &__logo {
+        width: 100px;
+        height: 100px;
+    }
+    &__policy {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: $textColor;
+        text-decoration: none;
+    }
+    &__copy {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: $textColor;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    &__email {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: $textColor;
+        text-decoration: none;
+    }
+}

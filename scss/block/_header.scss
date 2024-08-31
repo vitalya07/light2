@@ -29,8 +29,11 @@
             letter-spacing: 1.2px;
             font-size: 18px;
             color: #fff;
-            text-shadow: 0 0 15px #eccd3f;;
+            text-shadow: 0 0 15px #eccd3f;
         }      
+    }
+    &__menu {
+        margin-left: 30px;
     }
     &__items {
         display: flex;
